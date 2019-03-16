@@ -1,0 +1,36 @@
+@import url("./assets/reset.css");
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    
+    -webkit-font-smoothing:antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: grey;
+  overflow: hidden;
+}
+
+.app{
+    width: 100vw;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 1rem;
+    z-index: 999;
+    line-height: 1rem;
+    bottom: 0;
+}
+.switch-wrapper {
+  position: relative;
+}
+ 
+.switch-wrapper > div {
+  position: absolute;
+}

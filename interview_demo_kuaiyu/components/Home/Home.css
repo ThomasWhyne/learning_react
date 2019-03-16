@@ -1,0 +1,21 @@
+.home{
+    width: 100vw;
+    height: 1000px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.home-location{
+    padding:0.2rem 0.35rem ;
+    font-size: 0.4rem;
+    font-weight: 100;
+}
+
+.home-location span:first-child{
+    margin-right: 0.07rem;
+}
+
+.home-searchbar, .home-category,.home-recommend,.home-news{
+    padding: 0.3rem 0.35rem ;
+    margin-bottom: 0.25rem ;
+}

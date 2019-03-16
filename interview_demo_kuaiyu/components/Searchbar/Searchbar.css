@@ -1,0 +1,32 @@
+/* .searchbar input::-webkit-input-placeholder{
+    font-family: inherit;
+    font-size: 0.3rem;
+    text-indent: 0.4rem;
+} */
+
+.searchbar input{
+    font-family: inherit;
+    font-size: 0.3rem;
+    text-indent: 0.35rem;
+    color: #dadada;
+    height: 0.74rem;
+    width: 5.5rem;
+    border: 0.01rem solid #f2f2ff;
+    letter-spacing: 2px;
+    border-radius: 0 1em;
+    margin-right: 0.2rem;
+    box-shadow: -1px -1px 10px 6px #F6F6F6;
+    vertical-align: middle;
+}
+
+.searchbar-icon{
+    display: inline-block;
+    padding-bottom: 3px;
+    font-size: 0.3rem;
+    width: 0.74rem;
+    line-height: 0.74rem;
+    background-color: #e3662f;
+    border-radius: 0.19rem 0;
+    text-align: center;
+    vertical-align: middle;
+}

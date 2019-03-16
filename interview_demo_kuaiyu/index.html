@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo</title>
+</head>
+<body>
+    <div id="app"></div>
+    <script src="./assets/icon/iconfont.js"></script>
+    <script>
+        +function(window,document){
+            var docEl=document.documentElement;
+            var dpr=window.devicePixelRatio||1;
+            document.addEventListener("DOMContentLoaded",function(){
+                document.body.style.fontSize = (12 * dpr) + "px";
+            });
+
+            function setRemUnit(){
+                var rem=100*(docEl.clientWidth / 750);
+                docEl.style.fontSize=rem+"px";
+            }
+
+            setRemUnit();
+
+            function throttle(fn,wait) {
+              var timmer,source,previous=0;
+
+              function later() {
+                  previous=+new Date;
+                  timmer=null;
+                  fn(source);
+              }
+
+              function controller(e){
+                  var now=+new Date,remain=wait-(now-previous),source=e;
+                  if(remain<=0 || remain>wait){
+                      if(timmer){
+                          clearTimeout(timmer);
+                          timmer=null;
+                      }
+                      previous=now;
+                      fn(source);
+                  }else if(!timmer){
+                      timmer=setTimeout(later,remain);
+                  }
+              }
+
+              return controller;
+            }
+
+            // throttle(setRemUnit, 1000) 防抖
+            window.addEventListener("resize",setRemUnit);
+
+        }(window,document);
+    </script>
+    <script src="index_bundle.js"></script>
+</body>
+</html>

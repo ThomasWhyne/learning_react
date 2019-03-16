@@ -1,0 +1,30 @@
+{
+  "name": "interview_demo_kuaiyu",
+  "version": "0.1.0",
+  "description": "a demo for interview",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot"
+  },
+  "author": "ThomasWhyne <932694819@qq.com> (http://github.com/ThomasWhyne)",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "7",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.8.4",
+    "react-addons-css-transition-group": "^15.6.2",
+    "react-dom": "^16.8.4",
+    "react-router-dom": "^4.3.1",
+    "react-router-transition": "^1.3.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
