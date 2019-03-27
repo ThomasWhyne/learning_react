@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../reset.css">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- <ul class="carousel" data-init='{ "total": 6, "show": 4, "step": 1, "height": 100, "width": 200 }' aria-label="jack">
+        <li class="carousel-item"></li>
+        <li class="carousel-item"></li>
+        <li class="carousel-item"></li>
+        <li class="carousel-item"></li>
+        <li class="carousel-item"></li>
+        <li class="carousel-item"></li>
+    </ul>
+
+    <ul class="slider">
+                   
+    </ul>
+
+
+        
+    </div> -->
+
+    <form action="#" id="reservation" method="post" name="reservation">
+        <div class="close">X</div>
+        <div class="title">
+            <h3 class="title-wrapper">
+                <p class="caption-main">预约安装</p>
+                <p class="caption-sub">install</p>
+            </h3>
+        </div>
+        <div class="content">
+            <div class="reserve-input reserve-name">
+                <label for="reserve_name">您的姓名</label><input type="text" id="reserve_name" name="reserve_name" value="" placeholder="请输入您的姓名" required="required">
+            </div>
+            <div class="reserve-input reserve-phone">
+                <label for="reserve_phone">您的电话</label><input type="text" id="reserve_phone" name="reserve_phone" value="" placeholder="请输入您的电话"  required="required">
+            </div>
+            <div class="reserve-input reserve-type">
+                <label for="reserve_type">型号名称</label><input type="text" id="reserve_type" name="reserve_type" value="" placeholder="请输入需安装的产品型号" required="required">
+            </div>
+            <div class="reserve-select reserve-address">
+                <label for="address_province">安装地址</label>
+               <span class="select-wrapper">
+                    <select class="select-item" name="reserve_province" id="address_province" data-suffix="省">
+                        <option disabled selected hidden value="">请选择省</option>
+                        
+                    </select>
+                    <span class="select-suffix">省</span>
+                    <select class="select-item" name="reserve_city" id="address_city" data-suffix="市" disabled>
+                        <option disabled selected hidden value="">请选择市</option>
+                    </select>
+                    <span class="select-suffix">市</span>
+                    <select class="select-item" name="reserve_area" id="address_area" data-suffix="区" disabled>
+                        <option disabled selected hidden value="">请选择区</option>
+                    </select>
+                    <span class="select-suffix">区</span><br>
+               </span>
+                <p class="select-detail">
+                    <input type="text" id="address_detail" name="reserve_address_detail" placeholder="请填写详细地址" value="">
+                </p>
+            </div>
+
+            <div class="reserve-select reserve-date">
+                <label for="date_year">安装时间</label>
+                <span class="select-wrapper">
+                    <select class="select-item" name="reserve_year" id="" data-suffix="年">
+                        <option disabled selected hidden value="">请选择年</option>
+                    </select><span class="select-suffix">年</span>
+                    <select class="select-item" name="reserve_month" id="date_month" data-suffix="月">
+                        <option disabled selected hidden value="">请选择月</option>
+                    </select><span class="select-suffix">月</span>
+                    <select class="select-item" name="reserve_day" id="date_day" data-suffix="日">
+                        <option disabled selected hidden value="">请选择日</option>
+                    </select><span class="select-suffix">日</span><br>
+                </span>
+                <p class="select-detail">
+                    <select name="reserve_time" id="date_time">
+                        <option disabled selected hidden value="">请选择具体时间</option>
+                    </select>
+                </p>
+            </div>
+
+            <div class="reserve-input reserve-note">
+                <label for="reverse_note">备注</label>
+                <input type="text" id="reverse_note" name="reserve_note" placeholder="请填写备注信息" value="">
+            </div>
+            <div class="reserve-button">
+                <button type="submit" class="bgc-color-reverse">预约安装</button>
+            </div>
+        </div>
+    </form>
+
+
+
+</body>
+</html>

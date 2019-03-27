@@ -1,0 +1,276 @@
+body{
+    background: teal;
+}
+.carousel{
+    position: relative;
+    min-width: 960px;
+    overflow: hidden;
+}
+
+.carousel-wrapper{
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 0;
+}
+
+.carousel-item{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    transform: translateX(0);
+    transition: transform .5s ease-in-out;
+}
+
+.btn-next,.btn-prev{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    -webkit-appearance: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.btn-prev{
+    left: 0;
+}
+.btn-next{
+    right: 0;
+}
+
+.btn-next:hover,.btn-prev:hover{
+    color: #1695ef;
+}
+
+.slider{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.slider-item{
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+}
+
+.slider-item:nth-child(2n+1){
+    background-color: red;
+}
+
+.slider-item[data-current="current"]{
+    transform: translateX(0);
+}
+
+.slider-item[data-current="none"]{
+    transform: translateX(100%);
+}
+
+.slider-dots{
+    position: absolute;
+    width:100%;
+    height: 50px;
+    z-index: 3;
+    top: 50%;
+    background-color: green;
+}
+
+.slider-dot{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+
+.slider-dot[data-current="current"]{
+    background-color: #fff;
+}
+
+
+
+
+form#reservation ::placeholder{
+    text-indent: 10px;
+    
+}
+
+form#reservation input{
+    text-indent: 10px;
+}
+
+form#reservation select{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px 0;
+    background:url("../assets/images/箭头\(1\).png") right center no-repeat;
+    background-size: 12px 12px;
+    background-origin: content-box;
+    
+}
+
+
+
+form#reservation select:hover{
+    background-color: #1695ef;
+}
+
+form#reservation input:focus{
+    outline: 1px solid #1695ef;
+}
+
+
+form#reservation option{
+    display: inline-block;
+    height: 32px;
+}
+
+form#reservation option:hover{
+    background-color: red;
+}
+
+
+form#reservation ::placeholder,form#reservation select,form#reservation option,form#reservation input{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff ;
+    height: 32px;
+    font-size: 9px;
+    color: #cdcdcd;
+}
+
+
+
+
+
+form *{
+     box-sizing: border-box;
+}
+
+
+form#reservation{
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: #eee;
+    margin: 0 auto;
+    white-space: nowrap;
+  
+}
+
+form .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top:10px;
+    margin-right: 10px;
+}
+
+form .title{
+    height: 18%;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.title-wrapper{
+    padding-left: 15px;
+    border-left: 3px solid #1695ef;
+}
+
+.content{
+    margin: 50px 0;
+    font-size: 0;
+    
+}
+
+
+
+.reserve-input{
+    text-align: center;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.reserve-input label,.reserve-select label{
+    display: inline-block;
+    width: 10%;
+    font-size: 12px;
+    margin-right: 15px;
+    font-weight: bold;
+    vertical-align:middle;
+}
+
+.reserve-input input{
+    width: 55%;
+}
+
+.reserve-select{
+    text-align: center;
+}
+
+
+
+.select-wrapper{
+    width: 55%;
+}
+
+.select-item{
+    width: 25%;
+}
+
+
+.select-suffix{
+    font-size: 9px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.select-detail {
+    width: 71.2%;
+    margin-left:auto;
+    
+    text-align: left;
+}
+
+.select-detail input, .select-detail select{
+    width: 77%;
+}
+
+
+.bgc-color-reverse{
+
+    background-color: #fff;
+    transition: background-color .2s; 
+    white-space: nowrap;
+}
+
+.bgc-color-reverse:hover{
+    background-color: #1695ef;
+    color: #fff;
+    border-color: #1695ef;
+    transition: all .2s;
+}
+
+.reserve-button button{
+    display: block;
+    width: 100px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    border-radius: 28px;
+    margin: 20px auto;
+    
+}

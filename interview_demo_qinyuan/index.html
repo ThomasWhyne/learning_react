@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo_qinyuan</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./assets/font/iconfont.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scripts/carousel.css">
+    <link rel="stylesheet" href="./scripts/slider.css">
+    <link rel="stylesheet" href="./scripts/form.css">
+    <script src="./assets/font/iconfont.js"></script>
+    <script src="./scripts/libs/require.js" data-main="./scripts/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-wrapper">
+            <img class="logo-icon" src="./assets/images/logo.png" alt="icon_qinyuan" />
+            <a class="logo-name" href="#">沁园 TRULIVA</a>
+        </div>
+        <nav> 
+            <ul class="nav-wrapper">
+                <li class="nav-item"><a href="#">首页</a></li>
+                <li class="nav-item"><a href="#">产品中心</a></li>
+                <li class=" nav-item"><a href="#">新闻资讯</a></li>
+                <li class="nav-item"><a href="#">关于沁园</a></li>
+                <li class="nav-item"><a href="#">联系我们</a></li>
+                <li class="nav-item"><a href="#">网上商城</a></li>
+            </ul>
+            <input type="checkbox" id="trigger" />
+            <label class="search-trigger" for="trigger">
+                <svg class="icon" aria-hidden="true" width="22" height="22">
+                    <use xlink:href="#icon-sousuo"></use>
+                </svg>
+            </label> 
+            <label class="search-wrapper" for="trigger">
+                <form method="get" action="#" role="search" id="search"  class="search-bd">
+                    <button  type="reset" class="search-bd--reset">
+                        <svg class="icon" aria-hidden="true" width="22" height="22">
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </button>
+                    <input type="text"name="search" size="55" maxlength="30" value="请输入产品名称" >
+                    <button type="submit" class="search-bd--confirm">
+                        <svg class="icon" aria-hidden="true" width="22" height="22">
+                            <use xlink:href="#icon-sousuo"></use>
+                        </svg>
+                    </button>
+                </form>
+            </label>
+        </nav>
+    </header>
+    <section class="banner">
+        <ul class="banner-posters">
+            <li class="banner-item " id="poster_first">
+                <img src="./assets/images/banner_3.png" alt="">
+            </li>
+            <li class="banner-item" id="poster_second">
+                <img src="./assets/images/banner_1.png" alt="">
+            </li>
+        </ul>
+        <div class="banner-slogan">
+            <p class="banner-slogan--waterclean">沁园 二十年专注净水</p>
+            <p class="banner-slogan--watersecure">保障全家饮上优质健康水</p>
+            <p class="banner-slogan--seemore"><a href="#" class="bgc-color-reverse" >了解更多</a></p>
+        </div>
+        <div class="banner-progress">
+            <div class="banner-progress-wrapper">
+                <div id="progress__ahead" class="banner-progressbar--ahead"></div>
+            </div>
+            <div class="banner-progress-wrapper">
+                <div id="progress__ahead" class="banner-progressbar--after"></div>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <section class="production">
+            <div class="production-title">
+                <h2 class="title--main">沁园产品</h2>
+                <h3 class="title--sub">Product Center</h3>
+            </div>
+            <div class="production-bd">
+                <ul class="production-bd--nav">
+                    <input type="radio" id="carousel-item-1" name="carousel-item" class="input-hide" checked="checked">
+                    <li class="production-bd--navtab bgc-color-reverse"><label for="carousel-item-1">厨房净饮水</label></li>
+                    <input type="radio" id="carousel-item-2" name="carousel-item" class="input-hide">
+                    <li class="production-bd--navtab bgc-color-reverse"><label for="carousel-item-2">客厅净饮水</label></li>
+                    <input type="radio" id="carousel-item-3" name="carousel-item" class="input-hide">
+                    <li class="production-bd--navtab bgc-color-reverse"><label for="carousel-item-3">全屋净化系列</label></li>
+                    <input type="radio" id="carousel-item-4" name="carousel-item" class="input-hide">
+                    <li class="production-bd--navtab bgc-color-reverse"><label for="carousel-item-4">小型净水器</label></li>
+                    <input type="radio" id="carousel-item-5" name="carousel-item" class="input-hide">
+                    <li class="production-bd--navtab bgc-color-reverse"><label for="carousel-item-5">商用净水器</label></li>
+                    <div class="production-bd--carousel">
+                        <ul class="carousel" data-init='{"total":6,"show":4,"step":1,"height":336,"width":240}'>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">厨房QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">厨房QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">厨房QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">厨房QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">厨房QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">厨房QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="carousel" data-init='{"total":6,"show":4,"step":1,"height":336,"width":240}'>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="carousel" data-init='{"total":6,"show":4,"step":1,"height":336,"width":240}'>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="carousel" data-init='{"total":6,"show":4,"step":1,"height":336,"width":240}'>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="carousel" data-init='{"total":6,"show":4,"step":1,"height":336,"width":240}'>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">客厅QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">客厅QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">客厅QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">客厅QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">客厅QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">客厅QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="carousel" data-init='{"total":6,"show":4,"step":1,"height":420,"width":300}'>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">客厅QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">客厅QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                            <li class="carousel-item">
+                                <span class="__carousel-item--content--bd">
+                                    <img src="./assets/images/product.png" alt="">
+                                    <p class="production-name">沁园QR-RL-403</p>
+                                    <p class="production-readmore"><a href="#" class="bgc-color-reverse">Read More</a> </p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="information">
+            <div class="news-recommend">
+                <div class="news">
+                
+                    <div class="news-title">
+                        <h2 class="title--main">新闻资讯</h2>
+                        <h3 class="title--sub">News Information</h3>
+                    </div>
+                
+                    <div class="news-slider">
+                        <ul class="slider">
+                            <li class="slider-item">
+                                <img src="./assets/images/news.PNG" alt="">
+                                <p>2018年开年捷报沁园斩获“年度净水品牌大奖”</p>
+                            </li>
+                            <li class="slider-item">
+                                <img src="./assets/images/banner_1.png" alt="">
+                                <p>牌品水净度年“获斩园沁报捷年开年9102大奖</p>
+                            </li>
+                            <li class="slider-item">
+                                <img src="./assets/images/product.png" alt="">
+                                <p>2020年开年捷报沁园斩获“年度净水品牌大奖”</p>
+                            </li>
+                            <div class="slider-dots">
+                                <span class="slider-dot"></span>
+                                <span class="slider-dot"></span>
+                                <span class="slider-dot"></span>
+                            </div>
+                        </ul>
+                    </div>
+                
+                    <div class="news-item">
+                        <div class="news-item-bd">
+                            <div class="new-item-title"><label for="news_item_1">2018匠心当先！沁园20年再迎品牌升级</label><span class="new-item-timestamp">3-12</span></div>
+                            <input type="radio" id="news_item_1" name="news_item" class="news-item-input input-hide" checked="checked">
+                            <div class="news-item-main">
+                                <span class="new-item--poster"><img src="./assets/images/0product_small.jpg" alt=""></span>
+                                <span class="new-item--content">
+                                    <p class="text-clamp">"冻龄男神""暖心奶爸""专情丈夫"出道多年，吴尊获得无数光环。2017年现身
+                                        《爸爸去哪》出道多年，吴尊获得无数光环。2017年现身《爸爸去哪》出道多年，吴尊获得无数光环。
+                                        2017年现身《爸爸去哪》</p>
+                                    <a href="#" class="bgc-color-reverse">Read More</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="news-item-bd">
+                            <div class="new-item-title"><label for="news_item_2">2018匠心当先！沁园20年再迎品牌升级</label><span class="new-item-timestamp">3-12</span></div>
+                            <input type="radio" id="news_item_2" name="news_item" class="news-item-input input-hide">
+                            <div class="news-item-main">
+                                <span class="new-item--poster"><img src="./assets/images/0product_small.jpg" alt=""></span>
+                                <span class="new-item--content">
+                                    <p class="text-clamp">"冻龄男神""暖心奶爸""专情丈夫"出道多年，吴尊获得无数光环。2017年现身
+                                        《爸爸去哪》出道多年，吴尊获得无数光环。2017年现身《爸爸去哪》出道多年，吴尊获得无数光环。
+                                        2017年现身《爸爸去哪》</p>
+                                    <a href="#" class="bgc-color-reverse">Read More</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="news-item-bd">
+                            <div class="new-item-title"><label for="news_item_3">2018匠心当先！沁园20年再迎品牌升级</label><span class="new-item-timestamp">3-12</span></div>
+                            <input type="radio" id="news_item_3" name="news_item" class="news-item-input input-hide">
+                            <div class="news-item-main">
+                                <span class="new-item--poster"><img src="./assets/images/0product_small.jpg" alt=""></span>
+                                <span class="new-item--content">
+                                    <p class="text-clamp">"冻龄男神""暖心奶爸""专情丈夫"出道多年，吴尊获得无数光环。2017年现身
+                                        《爸爸去哪》出道多年，吴尊获得无数光环。2017年现身《爸爸去哪》出道多年，吴尊获得无数光环。
+                                        2017年现身《爸爸去哪》</p>
+                                    <a href="#" class="bgc-color-reverse">Read More</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="news-item-bd">
+                            <div class="new-item-title"><label for="news_item_4">2018匠心当先！沁园20年再迎品牌升级</label><span class="new-item-timestamp">3-12</span></div>
+                            <input type="radio" id="news_item_4" name="news_item" class="news-item-input input-hide">
+                            <div class="news-item-main">
+                                <span class="new-item--poster"><img src="./assets/images/0product_small.jpg" alt=""></span>
+                                <span class="new-item--content">
+                                    <p class="text-clamp">"冻龄男神""暖心奶爸""专情丈夫"出道多年，吴尊获得无数光环。2017年现身
+                                        《爸爸去哪》出道多年，吴尊获得无数光环。2017年现身《爸爸去哪》出道多年，吴尊获得无数光环。
+                                        2017年现身《爸爸去哪》</p>
+                                    <a href="#" class="bgc-color-reverse">Read More</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="news-item-bd">
+                            <div class="new-item-title"><label for="news_item_5">2018匠心当先！沁园20年再迎品牌升级</label><span class="new-item-timestamp">3-12</span></div>
+                            <input type="radio" id="news_item_5" name="news_item" class="news-item-input input-hide">
+                            <div class="news-item-main">
+                                <span class="new-item--poster"><img src="./assets/images/0product_small.jpg" alt=""></span>
+                                <span class="new-item--content">
+                                    <p class="text-clamp">"冻龄男神""暖心奶爸""专情丈夫"出道多年，吴尊获得无数光环。2017年现身
+                                        《爸爸去哪》出道多年，吴尊获得无数光环。2017年现身《爸爸去哪》出道多年，吴尊获得无数光环。
+                                        2017年现身《爸爸去哪》</p>
+                                    <a href="#" class="bgc-color-reverse">Read More</a>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="news-item-bd">
+                            <div class="new-item-title"><label for="news_item_6">2018匠心当先！沁园20年再迎品牌升级</label><span class="new-item-timestamp">3-12</span></div>
+                            <input type="radio" id="news_item_6" name="news_item" class="news-item-input input-hide">
+                            <div class="news-item-main">
+                                <span class="new-item--poster"><img src="./assets/images/0product_small.jpg" alt=""></span>
+                                <span class="new-item--content">
+                                    <p class="text-clamp">"冻龄男神""暖心奶爸""专情丈夫"出道多年，吴尊获得无数光环。2017年现身
+                                        《爸爸去哪》出道多年，吴尊获得无数光环。2017年现身《爸爸去哪》出道多年，吴尊获得无数光环。
+                                        2017年现身《爸爸去哪》</p>
+                                    <a href="#" class="bgc-color-reverse">Read More</a>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="recommend">
+                    <div class="recommend-title">
+                        <h2 class="title--main">快捷服务</h2>
+                        <h3 class="title--sub">Recommend</h3>
+                    </div>
+
+                    <div class="recommend-bd">
+                        <label class="recommend-bd-item" for="recommend-reservation">
+                            <i></i>
+                            <p>预约挂号</p>
+                        </label>
+                        <input type="radio" class="input-hide" id="recommend-reservation" name="recommend">
+                        
+                        <label class="recommend-bd-item" for="recommend-problem">
+                            <i></i>
+                            <p>常见问题</p>
+                        </label>
+                        <input type="radio" class="input-hide" id="recommend-problem" name="recommend">
+                        
+                        
+                        <label class="recommend-bd-item" for="recommend-saleservice">
+                            <i></i>
+                            <p>售后服务</p>
+                        </label>
+                        <input type="radio" class="input-hide" id="recommend-problem" name="recommend">
+                        
+
+                        
+                        <label class="recommend-bd-item" for="recommend-contact">
+                            <i></i>
+                            <p>联系我们</p>
+                        
+                        </label>
+                        <input type="radio" class="input-hide" id="recommend-contact" name="recommend">
+                        
+                    </div>
+
+                </div>
+            </div>
+            
+        </section>
+
+    </main>
+    <footer>
+
+        <div class="footer-main">
+            <div class="footer-main--bd">
+                <div class="footer-main--contact">
+                    <div class="footer--contact-hotline">
+                        <p>全国统一服务热线</p>
+                        <p > 000-0000-000</p>
+                    </div>
+                    <div class="footer--contact-wechat">
+                        <div class="footer--contact--qrcode">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <ul class="footer--bd-linkto">
+                    <li class="footer--bd-linkto-item">
+                        <a href="#">首页</a>
+                    </li>
+                    <li class="footer--bd-linkto-item"><a href="#">产品中心</a></li>
+                    <li class="footer--bd-linkto-item"><a href="#">新闻资讯</a></li>
+                    <li class="footer--bd-linkto-item"><a href="#">关于我们</a></li>
+                    <li class="footer--bd-linkto-item"><a href="#">联系我们</a></li>
+                    <li class="footer--bd-linkto-item"><a href="#">网上商城</a></li>
+                </ul>
+                <div class="footer--bd-address">
+                    <p>地址:&ensp;&ensp;江西省南昌市红谷滩新区学府大道899号慧谷创意产业园A座3楼</p>
+                    <p>技术支持: &ensp;&ensp;江西华邦</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p><a href="#">友情链接:&ensp;&ensp;&ensp;&ensp;江西百度</a></p>
+            <p>版权所有©2018-2020江西华邦传媒有限公司</p>
+        </div>
+
+    </footer>
+    <div class="float-icon">
+        <span class="float-icon--item customer-service"></span>
+        <span class="float-icon--item back-top"></span>
+    </div>
+    <div class="mask">
+        <div class="recommend-popup">
+            <form action="#" id="reservation" method="post" name="reservation">
+                <div class="close iconfont">&#xe646;</div>
+                <div class="title">
+                    <h3 class="title-wrapper">
+                        <p class="caption-main">预约安装</p>
+                        <p class="caption-sub">Appinotment and installation</p>
+                    </h3>
+                </div>
+                <div class="content">
+                    <div class="reserve-input reserve-name">
+                        <label for="reserve_name">您的姓名</label><input type="text" id="reserve_name" name="reserve_name" value=""
+                            placeholder="请输入您的姓名" required="required">
+                    </div>
+                    <div class="reserve-input reserve-phone">
+                        <label for="reserve_phone">您的电话</label><input type="text" id="reserve_phone" name="reserve_phone" value=""
+                            placeholder="请输入您的电话" required="required">
+                    </div>
+                    <div class="reserve-input reserve-type">
+                        <label for="reserve_type">型号名称</label><input type="text" id="reserve_type" name="reserve_type" value=""
+                            placeholder="请输入需安装的产品型号" required="required">
+                    </div>
+                    <div class="reserve-select reserve-address">
+                        <label for="address_province">安装地址</label>
+                        <span class="select-wrapper">
+                            <select class="select-item" name="reserve_province" id="address_province" data-suffix="省">
+                                <option disabled selected hidden value="">请选择省</option>
+            
+                            </select>
+                            <span class="select-suffix">省</span>
+                            <select class="select-item" name="reserve_city" id="address_city" data-suffix="市" disabled>
+                                <option disabled selected hidden value="">请选择市</option>
+                            </select>
+                            <span class="select-suffix">市</span>
+                            <select class="select-item" name="reserve_area" id="address_area" data-suffix="区" disabled>
+                                <option disabled selected hidden value="">请选择区</option>
+                            </select>
+                            <span class="select-suffix">区</span><br>
+                        </span>
+                        <p class="select-detail">
+                            <input type="text" id="address_detail" name="reserve_address_detail" placeholder="请填写详细地址" value="">
+                        </p>
+                    </div>
+            
+                    <div class="reserve-select reserve-date">
+                        <label for="date_year">安装时间</label>
+                        <span class="select-wrapper">
+                            <select class="select-item" name="reserve_year" id="" data-suffix="年">
+                                <option disabled selected hidden value="">请选择年</option>
+                            </select><span class="select-suffix">年</span>
+                            <select class="select-item" name="reserve_month" id="date_month" data-suffix="月">
+                                <option disabled selected hidden value="">请选择月</option>
+                            </select><span class="select-suffix">月</span>
+                            <select class="select-item" name="reserve_day" id="date_day" data-suffix="日">
+                                <option disabled selected hidden value="">请选择日</option>
+                            </select><span class="select-suffix">日</span><br>
+                        </span>
+                        <p class="select-detail">
+                            <select name="reserve_time" id="date_time">
+                                <option disabled selected hidden value="">请选择具体时间</option>
+                            </select>
+                        </p>
+                    </div>
+            
+                    <div class="reserve-input reserve-note">
+                        <label for="reverse_note">备注</label>
+                        <input type="text" id="reverse_note" name="reserve_note" placeholder="请填写备注信息" value="">
+                    </div>
+                    <div class="reserve-button">
+                        <button type="submit" class="bgc-color-reverse">预约安装</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

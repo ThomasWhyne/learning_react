@@ -1,0 +1,191 @@
+
+form#reservation ::placeholder{
+    text-indent: 10px;
+    
+}
+
+form#reservation input{
+    text-indent: 10px;
+}
+
+form#reservation select{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px 0;
+    background:url("../assets/images/箭头\(1\).png") right center no-repeat;
+    background-size: 12px 12px;
+    background-origin: content-box;
+    
+}
+
+
+
+form#reservation select:hover{
+    background-color: #1695ef;
+}
+
+form#reservation input:focus{
+    outline: 1px solid #1695ef;
+}
+
+
+form#reservation option{
+    display: inline-block;
+    height: 32px;
+}
+
+form#reservation option:hover{
+    background-color: red;
+}
+
+
+form#reservation ::placeholder,form#reservation select,form#reservation option,form#reservation input{
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #fff ;
+    height: 32px;
+    font-size: 9px;
+    color: #cdcdcd;
+}
+
+
+
+
+
+form *{
+     box-sizing: border-box;
+}
+
+
+form#reservation{
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: #eee;
+    margin: 0 auto;
+    white-space: nowrap;
+    
+  
+}
+
+form .close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top:10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+form .title{
+    height: 18%;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.title-wrapper{
+    padding-left: 15px;
+    border-left: 3px solid;
+    border-color: #1695ef;
+    animation: border_flash 1s ease-in infinite;
+}
+
+@keyframes border_flash{
+
+    to{
+        border-color: #fff;
+    }
+}
+
+.caption-sub{
+    margin-top: 5px;
+    font-size: 12px;
+    color:#ccc;
+    font-weight:100;
+}
+
+.content{
+    margin: 50px 0;
+    font-size: 0;
+    
+}
+
+
+
+.reserve-input{
+    text-align: center;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.reserve-input label,.reserve-select label{
+    display: inline-block;
+    width: 10%;
+    font-size: 12px;
+    margin-right: 15px;
+    font-weight: bold;
+    vertical-align:middle;
+}
+
+.reserve-input input{
+    width: 55%;
+}
+
+.reserve-select{
+    text-align: center;
+}
+
+
+
+.select-wrapper{
+    width: 55%;
+}
+
+.select-item{
+    width: 25%;
+}
+
+
+.select-suffix{
+    font-size: 9px;
+    margin: 0 13px;
+    vertical-align: middle;
+}
+
+.select-detail {
+    width: 71.4%;
+    margin-left:auto;
+    
+    text-align: left;
+}
+
+.select-detail input, .select-detail select{
+    width: 77%;
+}
+
+
+.bgc-color-reverse{
+
+    background-color: #fff;
+    transition: background-color .2s; 
+    white-space: nowrap;
+}
+
+.bgc-color-reverse:hover{
+    background-color: #1695ef;
+    color: #fff;
+    border-color: #1695ef;
+    transition: all .2s;
+}
+
+.reserve-button button{
+    display: block;
+    width: 100px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    border-radius: 28px;
+    margin: 20px auto;
+    
+}
