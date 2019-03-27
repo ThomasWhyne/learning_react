@@ -2,7 +2,10 @@
 - 应用开发库：jquery、reset.css、iconfont.js
 - 应用模块化方案：require.js    
 - 项目主文件：index.html、scripts/main.js、style.css  
-- 自定义模块：crousel.js、slider.js、form.js 
+- 自定义模块：crousel.js、slider.js、form.js   
+    - #### todo  
+         - 页面未进行响应式配置  
+         - 页面媒体资源文件加载未做懒加载处理
 
 - ### 代码示例
 
